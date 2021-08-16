@@ -1,4 +1,9 @@
+h1 {
+    color: wheat;
+}
+
 body {
     background-image: url('./images/background.jpg');
-    background-size: auto;
+    background-attachment: fixed;
+    background-size: cover;
 }
