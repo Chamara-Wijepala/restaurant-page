@@ -3,13 +3,8 @@ const content = document.getElementById('content');
 function createHeader() {
     const header = document.createElement('header');
     header.id = 'header';
-
-    const cafeName = document.createElement('h1');
-    cafeName.id = 'cafe-name';
-    cafeName.textContent = 'Cafe Express';
     
     content.appendChild(header);
-    header.appendChild(cafeName);
 
     return header;
 };
@@ -42,6 +37,8 @@ function createMain() {
     main.id = 'main';
     
     content.appendChild(main);
+
+    return main
 };
 
 function createFooter() {
