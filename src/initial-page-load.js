@@ -38,7 +38,7 @@ function createMain() {
     
     content.appendChild(main);
 
-    return main
+    return main;
 };
 
 function createFooter() {
