@@ -22,7 +22,7 @@ function createNav(header) {
     menuButton.textContent = 'Menu';
 
     const contactButton = document.createElement('button');
-    contactButton.classList.add('Contact');
+    contactButton.classList.add('nav-button');
     contactButton.textContent = 'Contact';
 
     nav.appendChild(homeButton);
