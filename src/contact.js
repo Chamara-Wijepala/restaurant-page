@@ -10,16 +10,19 @@ function createContact() {
 function createInfo(contact) {
     const address = document.createElement('p');
     address.classList.add('info');
-    address.textContent = 'Sample text';
+    address.textContent = 'Address: 4771 Coffman Alley, Paducah, Kentucky';
 
     const hours = document.createElement('p');
     hours.classList.add('info');
+    hours.textContent = 'Working Hours: 5:00 - 16:00';
 
     const phone = document.createElement('p');
     phone.classList.add('info');
+    phone.textContent = 'Telephone: 270-743-7835';
 
     const email = document.createElement('p');
     email.classList.add('info');
+    email.textContent = 'Email: cafeexpress@email.net';
 
     contact.appendChild(address);
     contact.appendChild(hours);
