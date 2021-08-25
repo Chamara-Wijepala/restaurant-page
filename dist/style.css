@@ -22,10 +22,38 @@ main {
     background-color: rgba(0, 0, 0, 0.5);
     height: 600px;
     width: 650px;
+    padding: 15px;
+    overflow: auto;
 }
 
 .nav-button {
     height: 50px;
     width: 75px;
     font-size: larger;
+}
+
+.item {
+    border: 1px solid white;
+    max-height: 250px;
+    max-width: 300px;
+    position: relative;
+}
+
+.item-image {
+    height: 250px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.item-name {
+    position: absolute;
+    bottom: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 15px;
 }
