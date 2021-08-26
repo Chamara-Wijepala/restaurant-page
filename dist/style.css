@@ -23,6 +23,9 @@ main {
     height: 600px;
     width: 650px;
     padding: 15px;
+    margin-top: 10vh;
+    margin-left: 7.5vw;
+    float: left;
     overflow: auto;
     text-align: center;
     position: relative;
