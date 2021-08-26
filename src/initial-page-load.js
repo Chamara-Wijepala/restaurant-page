@@ -13,6 +13,9 @@ function createNav(header) {
     const nav = document.createElement('nav');
     nav.id = 'nav';
 
+    const buttonSet = document.createElement('div');
+    buttonSet.id = 'button-set';
+
     const homeButton = document.createElement('button');
     homeButton.classList.add('nav-button');
     homeButton.textContent = 'Home';
@@ -25,9 +28,11 @@ function createNav(header) {
     contactButton.classList.add('nav-button');
     contactButton.textContent = 'Contact';
 
-    nav.appendChild(homeButton);
-    nav.appendChild(menuButton);
-    nav.appendChild(contactButton);
+    buttonSet.appendChild(homeButton);
+    buttonSet.appendChild(menuButton);
+    buttonSet.appendChild(contactButton);
+
+    nav.appendChild(buttonSet);
 
     header.appendChild(nav);
 };
@@ -41,16 +46,8 @@ function createMain() {
     return main;
 };
 
-function createFooter() {
-    const footer = document.createElement('footer');
-    footer.id = 'footer';
-    
-    content.appendChild(footer);
-};
-
 export default function pageLoad() {
     createHeader();
     createNav(header);
     createMain();
-    createFooter();
 };
